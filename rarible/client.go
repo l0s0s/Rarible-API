@@ -12,8 +12,8 @@ const (
 	rariblePath string = "https://api.rarible.org/v0.1"
 )
 
-func NewClient(apiKey, referer string) Client {
-	return Client{
+func NewClient(apiKey, referer string) *Client {
+	return &Client{
 		apiKey:  apiKey,
 		referer: referer,
 	}
